@@ -1,0 +1,118 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+:root{
+ --main-blue: #14213D;
+ --orange: #FCA311;
+ --secondary-blue: #3772FF;
+ --white: #FEFFFF;
+ --blue-gradient: linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%);
+}
+body{
+ background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/error-img.jpeg);
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ height: 100%;
+}
+.for-header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ display: flex;
+ width: 90rem;
+ padding: 1.5rem 5rem 0.5rem 5rem; 
+ position: fixed;
+ margin-top: -15px;
+}
+.nav{
+ margin-left: 5rem;
+}
+.nav ul{
+ padding-top: 20px;
+}
+.nav ul li{
+ list-style: none;
+ display: inline-block;
+ padding-right: 25px;
+}
+.nav .top-nav ul li a{
+ text-decoration: none;
+ font-weight: 400;
+ transition: ease-in-out 0.5s;
+ color: var(--main-blue);
+}
+.top-nav{
+ display: flex;
+ justify-content: space-between;
+ align-items:center ;
+}
+.started a{
+ text-decoration: none;
+ background-color: var(--main-blue);
+ color: var(--white);
+ display: flex;
+ width: 12.0625rem;
+ padding: 0.5rem 1.5rem;
+ justify-content: center;
+ align-items: center;
+ flex-shrink: 0; 
+ border-radius: 1.5rem;
+}
+section{
+ padding-top: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--white);
+}
+.error-background, #error-background, #error-backgrounds{
+ display: flex;
+ flex-direction: column;
+ background-color: #626B7E;
+ justify-content: center;
+ align-items: center;
+ width: 60vw;
+ height: 60vh;
+ border-radius: 1.25rem;
+}
+#error-background{
+ height: 40vh;
+ color: var(--orange);
+}
+#error-backgrounds{
+ height: 40vh;
+ color: var(--white);
+ background-color: var(--secondary-blue);
+}
+.error-background button, #error-background button, #error-backgrounds button{
+ background-color: transparent;
+ border: none;
+}
+.error-background button a, #error-background button a, #error-backgrounds button a{
+ text-decoration: none;
+ background-color: var(--main-blue);
+ border-radius: 1.5rem;
+ padding: 0.5rem 1.5rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: var(--white);
+}
+.jumbotron{
+ height: 80vh;
+ width: 100vw;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.big-font{
+ font-size: 3rem;
+}
+.big-fonts{
+ font-size: 2rem;
+}

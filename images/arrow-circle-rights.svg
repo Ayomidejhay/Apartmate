@@ -1,0 +1,36 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" fill="#858585"/>
+<g id="landing page" clip-path="url(#clip0_80_11)">
+<rect width="1440" height="4265" transform="translate(-636 -2609)" fill="#FBFFFE"/>
+<g id="main body">
+<g id="FAQ section">
+<g id="questions">
+<g id="left side">
+<g id="faq">
+<g id="question">
+<path d="M-556 -16C-556 -24.8366 -548.837 -32 -540 -32H56C64.8366 -32 72 -24.8366 72 -16V64C72 72.8366 64.8366 80 56 80H-540C-548.837 80 -556 72.8366 -556 64V-16Z" fill="url(#paint0_linear_80_11)"/>
+<g id="vuesax/linear/arrow-circle-right">
+<g id="vuesax/linear/arrow-circle-right_2">
+<g id="arrow-circle-right">
+<path id="Vector" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="#FBFFFE" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M21.4805 31.0595L28.5205 23.9995L21.4805 16.9395" stroke="#FBFFFE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_80_11" x1="-242" y1="28.4545" x2="-211.6" y2="231.366" gradientUnits="userSpaceOnUse">
+<stop stop-color="#14213D"/>
+<stop offset="1" stop-color="#3772FF"/>
+</linearGradient>
+<clipPath id="clip0_80_11">
+<rect width="1440" height="4265" fill="white" transform="translate(-636 -2609)"/>
+</clipPath>
+</defs>
+</svg>

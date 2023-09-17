@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apartmate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <div class="for-header flex space-between items-center">
+          <div class="logo"><img src="./images/logo (2).png" alt="logo"></div>
+          <div class="nav"> 
+           <div class="text-capitalize top-nav">
+            <ul class="nav-links">
+              <li><a class="mx-2" href="#">home</a></li>
+              <li><a class="mx-2" href="#">apartments</a></li>
+              <li><a class="mx-2" href="#">find roommate</a></li>
+              <li><a class="mx-2" href="#">add listing</a></li> 
+            </ul> 
+            <div class="started d-md-none">
+              <a class="" href="#">get started</a>
+            </div>        
+           </div>
+          </div>
+          <div class="started d-none d-md-block">
+            <a class=" text-capitalize" href="#">get started</a>
+          </div>
+          <div class="burger">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+          </div>
+         </div>
+      </nav>
+     </header>
+
+     <!--hero section-->
+     <div class="mt-2 hero">
+      <div class="jumbotron hero-section">
+        <div class="container-md d-flex flex-column align-items-center justify-content-center gap-3 py-5">
+          <div>
+            <h1 class="text-capitalize">discover your ideal student accomodation</h1>
+          </div>
+          <div>
+            <h3 class="text-capitalize">simplify your search, elevate your student experience</h3>
+          </div>
+          <div class="hero-text text-center lh-base">
+            <p>
+              Are you a student on the hunt for the perfect accommodation near your institution? Look no further! Welcome to APARTMATE, your ultimate destination for finding comfortable and convenient student accommodations tailored to your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!--search section-->
+     <section>
+      <div class="jumbotron">
+        <div class="container-md form-container mx-5">
+          <form class="d-flex flex-column align-items-center" action="" method="get">
+            <div class="d-flex">
+              <div class="d-flex flex-column text-center gap-3 mx-4">
+                <label for="type">Apartment Type</label>
+                <select class="w-10" name="type" id="type">
+                  <option value=""></option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column text-center gap-3 mx-4">
+                <label for="bedroom">No. of Bedrooms</label>
+                <select class="w-10" name="bedroom" id="bedroom">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column text-center gap-3 mx-4">
+                <label for="bathroom">No. of Bathrooms</label>
+                <select name="bathroom" id="bathroom">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column text-center gap-3 mx-4">
+                <label for="location">Location</label>
+                <select name="location" id="location">
+                  <option value=""></option>
+                  <option value="lagos">Lagos</option>
+                  <option value="abuja">Abuja</option>
+                  <option value="kaduna">Kaduna</option>
+                  <option value="kano">Kano</option>
+                  <option value="oyo">Oyo</option>
+                  <option value="anambra">Anambra</option>
+                </select>
+              </div>
+            </div>
+            <button class="search text-capitalize mt-3" type="submit">start your search</button>
+          </form>
+        </div>
+      </div>
+     </section>
+
+     <!--how it works-->
+     <section>
+      <div class="jumbotron works-section">
+        <div class="container-md my-5">
+          <div>
+            <div class="text-center">
+              <h4 class="text-capitalize fw-bold">how apartmate works</h4>
+              <div class="underline"></div>
+            </div>
+            <div class="row my-5 gap-4">
+              <div class="col-md-4 work-card d-flex flex-column gap-3 justify-content-center align-items-center explore">
+                <img src="./images/streamline-emojis_face-with-monocle.svg" alt="">
+                <p class="fs-3">1. Explore Listings</p>
+                <p class="text-center gap-2 work-inner-text" id="explore">Find the perfect place based on location, budget, and amenities. From cozy studios to shared apartments, we've got your housing needs covered.</p>
+              </div>
+              <div class="col-md-4 work-card d-flex flex-column gap-3 justify-content-center align-items-center compare">
+                <img src="./images/streamline-emojis_thinking-face.svg" alt="">
+                <p class="fs-3">2. Review and Compare</p>
+                <p class="text-center gap-2 work-inner-text" id="compare" >Select listings, delve into comprehensive details and vivid images, and effortlessly compare various options to discover the perfect fit, all with the convenience of our roommate matching feature.</p>
+              </div>
+              <div class="col-md-4 work-card d-flex flex-column gap-3 justify-content-center align-items-center confidence">
+                <img  src="./images/streamline-emojis_smiling-face-with-sunglasses.svg" alt="">
+                <p class="fs-3">3. Book with Confidence</p>
+                <p class="text-center gap-2 work-inner-text" id="confidence">After finding your ideal accomodation, connect with agents, get your questions answered and use our secure booking system to rreserve your spot hassle-free, ensuring a worry-free student living experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!--why apartmate-->
+     <section>
+      <div class="jumbotron why-section">
+        <div class="container-md">
+          <div>
+            <div class="text-center">
+              <h4 class="text-capitalize fw-bold">why apartmate?</h4>
+              <div class="underline"></div>
+            </div>
+            <div class="row my-5 gap-4">
+              <div class="col">
+                <div>
+                  <img src="./images/verify.svg" alt="">
+                  <h6 class="my-3">Verified Listings</h6>
+                  <p>Explore trusted accommodations with our verified listings.</p>
+                </div>
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div>
+                  <img src="./images/convert-3d-cube.svg" alt="">
+                  <h6 class="my-3">Tailored Matchmaking</h6>
+                  <p>Find a compatible roommate for a seamless living experience.</p>
+                </div>
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div>
+                  <img src="./images/direct-inbox.svg" alt="">
+                  <h6 class="my-3">Direct Communication</h6>
+                  <p>Connect directly with agents for quick answers and secure bookings</p>
+                </div>
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div>
+                  <img src="./images/people.svg" alt="">
+                  <h6 class="my-3">User Reviews</h6>
+                  <p>Make informed decisions with real user reviews and ratings.</p>
+                </div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!--featured listing-->
+     <section>
+      <div class="jumbotron featured-section">
+        <div class="container-md">
+          <div>
+            <div class="text-center">
+              <h4 class="text-capitalize fw-bold">explore our featured listings</h4>
+              <div class="underline"></div>
+            </div>
+            <p class="text-center mt-2">Discover Accommodations That Fit Your Lifestyle near renowned universities</p>
+            <div class="featured my-4">
+              <button>Unilag</button>
+              <button>Uniben</button>
+              <button>UI</button>
+              <button>OAU</button>
+              <button>ABU</button>
+              <button>Unilorin</button>
+            </div>
+            <div class="">
+              <div class="row">
+                <div class="col">
+                  <img src="./images/image.png" alt="">
+                  <div class="d-flex justify-content-between align-items-center my-1">
+                    <h6 class="text-capitalize fw-bold mt-2">luxury studio apartment</h6>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div class="d-flex justify-content-between list-top align-items-center">
+                    <div class="land-listing d.flex gap-2">
+                      <img src="./images/location.svg" alt="">
+                      <p class="pt-3">Akoka</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex gap-2" >
+                      <img src="./images/share.svg" alt="">
+                      <p class="pt-3">1 Bedroom (s)</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex">
+                      <img src="./images/star.svg" alt="">
+                      <p class="pt-3">4.8 Rating</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center last-list">
+                    <h6>N80,000/month</h6>
+                    <button class="listing-btn"><a href="#">View Details</a></button>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <img src="./images/image.png" alt="">
+                  <div class="d-flex justify-content-between align-items-center my-1">
+                    <h6 class="text-capitalize fw-bold mt-2">spacious 2-bedroom apartment</h6>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div class="d-flex justify-content-between list-top align-items-center">
+                    <div class="land-listing d.flex gap-2">
+                      <img src="./images/location.svg" alt="">
+                      <p class="pt-3">Yaba</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex gap-2" >
+                      <img src="./images/share.svg" alt="">
+                      <p class="pt-3">2 Bedroom (s)</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex">
+                      <img src="./images/star.svg" alt="">
+                      <p class="pt-3">4.9 Rating</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center last-list">
+                    <h6>N120,000/month</h6>
+                    <button class="listing-btn"><a href="#">View Details</a></button>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <img src="./images/image.png" alt="">
+                  <div class="d-flex justify-content-between align-items-center my-1">
+                    <h6 class="text-capitalize fw-bold mt-2">cozy shared apartment</h6>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div class="d-flex justify-content-between list-top align-items-center">
+                    <div class="land-listing d.flex gap-2">
+                      <img src="./images/location.svg" alt="">
+                      <p class="pt-3">Bariga</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex gap-2" >
+                      <img src="./images/share.svg" alt="">
+                      <p class="pt-3">4 Bedroom (s)</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="land-listing d.flex">
+                      <img src="./images/star.svg" alt="">
+                      <p class="pt-3">4.5 Rating</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center last-list">
+                    <h6>N500,000/month</h6>
+                    <button class="listing-btn"><a href="#">View Details</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!--second hero-->
+     <section>
+      <div class="jumbotron need-roommate">
+        <div class="container-md">
+          <div class="text-center need-roomate">
+            <h4>Need A Roommate?</h4>
+            <p class="mb-5 mt-3 need-text">Discover potential roommates who share your preferences, interests, and values. Finding a great roommate has never been easier.</p>
+            <a href="#">Roommates Listing <span class="mx-3"><img src="./images/arrow.svg" alt=""></span></a>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!--faq-->
+     <section>
+      <div class="jumbotron">
+        <div class="container-md">
+          <div class="text-center">
+            <h4 class="text-capitalize fw-bold">find answers to your questions</h4>
+            <div class="underline"></div>
+          </div>
+          <div class="row">
+            <div class="col faq">
+              <div class="d-flex justify-content-between align-items-center px-3 py-3 faq-question">
+                <p class="pt-3">How does apartment work?</p>
+                <button class="faq-button"><img src="./images/arrow-circle-rights.svg" alt=""></button>
+              </div>  
+              <div class="px-2 py-3 faq-answer"></div>
+            </div>
+            <div class="col"></div>          
+          </div>
+        </div>
+       </div>
+     </section>
+
+     <!--testimonial section-->
+     <section>
+      <div class="jumbotron">
+        <div class="container-md">
+          <div>
+            <div class="text-center">
+              <h4 class="text-capitalize fw-bold">what our users say</h4>
+              <div class="underline"></div>
+            </div>
+            <div class="mt-5 d-flex justify-content-center align-items-center">
+              <div>
+                <div class="row gap-5">
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial1.png" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Jane</p>
+                      <p class="school">unilag</p>
+                    </div>
+                    <p>"Found my perfect roomie and apartment hassle-free"</p>
+                  </div>
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial2.svg" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Chika</p>
+                      <p class="school">ui</p>
+                    </div>
+                    <p>"Connected with amazing roommates on this platform"</p>
+                  </div>
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial3.svg" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Tolu</p>
+                      <p class="school">oau</p>
+                    </div>
+                    <p>"Apartmate made my housing search a breeze"</p>
+                  </div>
+                </div>
+                <div class="row mt-5 gap-5">
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial4.svg" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Bisi</p>
+                      <p class="school">futa</p>
+                    </div>
+                    <p>"Thanks to apartmate, I'm loving my new place"</p>
+                  </div>
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial5.svg" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Sade</p>
+                      <p class="school">funaab</p>
+                    </div>
+                    <p>"Best decision I made for my student life!"</p>
+                  </div>
+                  <div class="col-4 p-5 testimonial">
+                    <div class="text-center pb-2 "><img class="testimonial-img" src="./images/testimonial6.svg" alt=""></div>
+                    <div class="d-flex justify-content-between pb-3 pt-2">
+                      <p class="fw-bold">Emeka</p>
+                      <p class="school">abu</p>
+                    </div>
+                    <p>"Reliable listings, great experience!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+     </section>
+
+     <!--footer-->
+     <footer>
+      <div class="jumbotron">
+        <div class="d-flex justify-content-between">
+          <div id="address">
+            <h6 class="pb-2">About Us</h6>
+            <p>
+              We provide an easy-to-use platform for students in Nigeria to find the perfect place to live, whether on or off campus. Discover the ideal home for your student journey with <span class="set-color">APARTMATE</span>.
+            </p>
+            <p class="pt-2"><span>&copy;</span> 2023 Apartmate. All Rights Reserved.</p>
+          </div>
+          <div id="contact">
+            <h6>Contact Us</h6>
+            <p>123 Student Avenue, Lagos, Nigeria</p>
+            <p>+234(0) 123 456 789</p>
+            <p><a href="#">info@apartmate.com</a></p>
+          </div>
+          <div class="text-capitalize footer-link">
+            <p><a href="#">home</a></p>
+            <p><a href="#">how it works</a></p>
+            <p><a href="#">partnership</a></p>
+            <p><a href="#">privacy policy</a></p>
+            <p><a href="#">terms of use</a></p>
+          </div>
+          <div id="connect">
+            <h6>Connect With Us</h6>
+            <div class="d-flex justify-content-between gap-3">
+              <div class="social"><a href="#"><img  src="./images/facebook.svg" alt=""></a></div>
+              <div class="social"><a href="#"><img src="./images/instagram.svg" alt=""></a></div>
+              <div class="social"><a href="#"><img src="./images/whatsapp.svg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
