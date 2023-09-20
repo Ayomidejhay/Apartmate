@@ -16,10 +16,10 @@
         <div class="nav"> 
          <div class="text-capitalize top-nav">
           <ul class="nav-links">
-            <li><a class="mx-2" href="#">home</a></li>
-            <li><a class="mx-2" href="#">apartments</a></li>
-            <li><a class="mx-2" href="#">find roommate</a></li>
-            <li><a class="mx-2" href="#">add listing</a></li> 
+            <li><a class="mx-2 nav-link" href="./index.html">home</a></li>
+            <li><a class="mx-2 nav-link" href="./apartment.html">apartments</a></li>
+            <li><a class="mx-2 nav-link" href="./potential-roommate.html">find roommate</a></li>
+            <li><a class="mx-2 nav-link" href="#">add listing</a></li> 
           </ul> 
           <div class="started d-md-none">
             <a class="" href="#">get started</a>
@@ -38,14 +38,397 @@
     </nav>
    </header>
 
-   <div class="text-capitalize">
-    <p><span>search result:  </span>10 0f 20 result found</p>
+   <div class="jumbotron"  >
+    <div class="row">
+      <div class="col-4" id="apart-container">
+        <div class="section-side">
+          <form action="">
+            <div>
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class="text-capitalize" name="offer-type" id="offer-type">
+                  <option value="">offer type</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class=" text-capitalize" name="hostel-type" id="hostel-type">
+                  <option value="">hostel type</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class=" text-capitalize" name="university" id="university">
+                  <option value="">enter university</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class="text-capitalize" name="state" id="state">
+                  <option value="">state</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class="text-capitalize" name="city" id="city">
+                  <option value="">city</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class="text-capitalize" name="school-area" id="school-area">
+                  <option value="">preferred school area</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class="text-capitalize" name="map" id="map">
+                  <option value="">map</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class="text-capitalize" name="shared" id="shared">
+                  <option value="">shared</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class="text-capitalize" name="min-price" id="min-price">
+                  <option value="">min. price</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class="text-capitalize" name="max-price" id="max-price">
+                  <option value="">max. price</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+              <div class="apart-input d-flex justify-content-between gap-2 my-3">  
+                <select class="text-capitalize" name="furnishing" id="furnishing">
+                  <option value="">furnishing</option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+                <select class="text-capitalize" name="blank" id="blank">
+                  <option value=""></option>
+                  <option value="single-room">single room</option>
+                  <option value="self-contain">room self contain</option>
+                  <option value="flat">flat</option>
+                </select>
+              </div>
+              
+            </div>
+            <div class="text-center aparts-button">
+              <button class="text-uppercase" type="submit"><span class="pe-3"><img src="./images/search 2.svg" alt=""></span> search</button>
+            </div>
+          </form>
+        </div>
+        <div class="section-side">
+          <div class="my-5 text-uppercase">
+            <h5 class=" text-center py-2">features & amenities</h5>
+            <form action="" >
+              <input type="checkbox" name="electricity" id="electricity" value="electricity">
+              <label for="electricity">electricity</label> <br>
+              <input type="checkbox" name="bathroom" id="bathroom" value="bathroom">
+              <label for="bathroom">furnished bathroom</label> <br>
+              <input type="checkbox" name="toilet" id="toilet" value="toilet">
+              <label for="toilet">furnished toilet</label> <br>
+              <input type="checkbox" name="tiled" id="tiled" value="tiled">
+              <label for="tiled">tiled floor</label> <br>
+              <input type="checkbox" name="floor" id="floor" value="floor">
+              <label for="floor">iron doors</label> <br>
+              <input type="checkbox" name="internet" id="internet" value="internet">
+              <label for="internet">high speed internet</label> <br>
+              <input type="checkbox" name="kitchen" id="kitchen" value="kitchen">
+              <label for="kitchen">kitchen</label> <br>
+              <input type="checkbox" name="laundry" id="laundry" value="laundry">
+              <label for="laundry">laundry facilities</label> <br>
+              <input type="checkbox" name="fitness" id="fitness" value="fitness">
+              <label for="fitness">fitness center</label> <br>
+              <input type="checkbox" name="grocery" id="grocery" value="grocery">
+              <label for="grocery">nearby grocery store</label> <br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-8" id="apart-container">
+        <div class="row">
+          <div class="col-6">
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">a room self contained</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1400sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#350,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-6">
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">a room self contained</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1400sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#350,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+            <div class="apart-each">
+              <img src="./images/self-contain-featured 2(1).png" alt="">
+              <div class="after-image">
+                <div class="d-flex justify-content-between">
+                  <p class="text-uppercase fw-bold dark-head fs-6">2 bedroom apartment</p>
+                  <img src="./images/heart.svg" alt="">
+                </div>
+                <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                <div class="d-flex justify-content-between">
+                  <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                  <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                  <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                  <p><span><img src="./images/sqft.svg" alt=""></span>  1200sqft</p>
+                </div>
+                <p><span class="yellow">150+</span> Reviews</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class=""><span class="name fw-bold fs-6">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                  <button class="apart-button fw-bold">More details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
    </div>
 
-   <div class="header">
-    <img src="" alt="">
-    <p class="text-uppercase fw-bold fs-1">university of lagos</p>
-   </div>
+   <footer>
+    <div class="jumbotron">
+      <div class="d-flex justify-content-between">
+        <div id="address">
+          <h6 class="pb-2">About Us</h6>
+          <p>
+            We provide an easy-to-use platform for students in Nigeria to find the perfect place to live, whether on or off campus. Discover the ideal home for your student journey with <span class="set-color">APARTMATE</span>.
+          </p>
+          <p class="pt-2"><span>&copy;</span> 2023 Apartmate. All Rights Reserved.</p>
+        </div>
+        <div id="contact">
+          <h6>Contact Us</h6>
+          <p>123 Student Avenue, Lagos, Nigeria</p>
+          <p>+234(0) 123 456 789</p>
+          <p><a href="#">info@apartmate.com</a></p>
+        </div>
+        <div class="text-capitalize footer-link">
+          <p><a href="./index.html">home</a></p>
+          <p><a href="#">how it works</a></p>
+          <p><a href="#">partnership</a></p>
+          <p><a href="#">privacy policy</a></p>
+          <p><a href="#">terms of use</a></p>
+        </div>
+        <div id="connect">
+          <h6>Connect With Us</h6>
+          <div class="d-flex justify-content-between gap-3">
+            <div class="social"><a href="#"><img  src="./images/facebook.svg" alt=""></a></div>
+            <div class="social"><a href="#"><img src="./images/instagram.svg" alt=""></a></div>
+            <div class="social"><a href="#"><img src="./images/whatsapp.svg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./script.js"></script>

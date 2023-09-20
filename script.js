@@ -1,10 +1,10 @@
-const sideNavEls = document.querySelectorAll('.dash')
+const navLinkEls = document.querySelectorAll('.nav-link')
 const windowPathname = window.location.pathname
 
-sideNavEls.forEach(sideNavEl => {
- const sideNavPathname = new URL(sideNavEl.href).pathname
+navLinkEls.forEach(navLinkEl => {
+ const navLinkPathname = new URL(navLinkEl.href).pathname
 
- if ((windowPathname === sideNavPathname) || (windowPathname === '/agent-dashboard.html' && sideNavPathname === '/')) {
-  sideNavEl.classList.add('current')
+ if ((windowPathname === navLinkPathname) || (windowPathname === '/index.html' && navLinkPathname === '/')) {
+  navLinkEl.classList.add('active-link')
  }
 })
