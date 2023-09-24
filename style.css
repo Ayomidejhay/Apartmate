@@ -29,6 +29,7 @@ body{
  padding: 1.5rem 5rem 0.5rem 5rem; 
  position: fixed;
  margin-top: -15px;
+ z-index: 1000;
 }
 .nav{
  margin-left: 5rem;
@@ -67,8 +68,11 @@ body{
  flex-shrink: 0; 
  border-radius: 1.5rem;
 }
-.started a{
+.started button{
  margin-left: 15rem;
+ outline: none;
+ border: none;
+ background-color: transparent;
 }
 .hero-text{
  width: 39.25rem;
@@ -86,6 +90,8 @@ body{
 }
 .hero{
  padding: 1.5rem 5rem;
+ margin-left: 30px;
+ 
 }
 .form-container{
  width: 90rem;
@@ -168,6 +174,9 @@ section{
 .list-top{
  margin-top: -10px;
 }
+.second-hero{
+ padding: 1.5rem 2rem;
+}
 .need-roomate a{
  text-decoration: none;
  color: var(--secondary-blue);
@@ -187,6 +196,7 @@ section{
  border-radius: 3rem;
  color: var(--white);
  padding:2rem;
+ 
 }
 .need-text{
  width: 39rem;

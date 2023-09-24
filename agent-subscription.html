@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agent subscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dashboard.css">
+  </head>
+  <body>
+    <div class="row">
+     <div class="col-2 side-menu text-center pt-5 text-capitalize">
+      <img src="./images/logo (2).png" alt="">
+      <div class="mt-5 d-flex flex-column  " id="side-menu">
+       <a href="agent-dashboard.html">
+        <div class="d-flex py-2 px-3 dash">
+          <img src="./images/ic_round-dashboard.svg" alt="">
+          <a class="mx-4" href="agent-dashboard.html">dashboard</a>
+         </div>
+       </a>
+       <a href="">
+        <div class="d-flex py-2 px-3 dash">
+          <img src="./images/material-symbols_real-estate-agent.svg" alt="">
+          <a class="mx-4" href="#">my listings</a>
+         </div>
+       </a>
+       <a href="agent-stat.html">
+        <div class="d-flex py-2 px-3 dash">
+          <img src="./images/ion_stats-chart.svg" alt="">
+          <a class="mx-4" href="agent-stat.html">stats</a>
+         </div>
+       </a>
+       <a href="">
+        <div class="d-flex py-2 px-3 dash">
+          <img src="./images/iconamoon_profile-fill.svg" alt="">
+          <a class="mx-4" href="#">profile</a>
+         </div>
+       </a>
+       <a href="agent-subscription.html">
+        <div class="d-flex py-2 px-3 dash active-link">
+          <img src="./images/eos-icons_product-subscriptions.svg" alt="">
+          <a class="mx-4" href="agent-subscription.html">subscription</a>
+         </div>
+       </a>
+ 
+      </div>
+      <div class="text-center downside">
+       <img src="./images/Ellipse 22.svg" alt="">
+       <p class="name">James Adeleke</p>
+       <p class="student">Agent</p>
+       <div class="d-flex gap-4 justify-content-center">
+        <a href="#"><img class="downside-img" src="./images/settings.svg" alt=""></a>
+        <a href="#"><img class="downside-img" src="./images/logout.svg" alt=""></a>
+       </div>
+      </div>
+     </div>
+
+     <div class="col-10 right-side px-5 pt-5">
+      <div class="d-flex justify-content-between align-items-center">
+       <p class="fw-bold fs-4">Subscription</p>
+       <div class="d-flex add-listing gap-5">
+        <div class="search d-flex gap-3" >
+         <img src="./images/search.svg" alt="">
+         <input type="text" name="search" placeholder="Search" id="search">
+        </div>
+        <a href="#"><img src="./images/notification.svg" alt=""></a>
+        <a href="#"><img src="./images/messages-2.svg" alt=""></a>
+        <button><a href="./add-listing.html">Add a Listing</a></button>
+       </div>
+      </div>
+      <div class="second my-5 row g-0">
+       <div class="col-6 second-left pb-2 px-5 ">
+        <p class="text-capitalize pb-3 pt-4 name fs-5">hi james!</p>
+        <p>You have <span class="name">15 days</span> left to renew your basic subscription</p>
+        <p>Upgrade to <span class="name">Premium</span> to enjoy the unlimited offer.</p>
+        <p>Check <span class="name"><a href="#">stat</a></span> to get more details on your ads.</p>
+       </div>
+       <div class="col-6 rent">
+         <img class="img-fluid"  src="./images/subscription-image.png" alt="">
+       </div>
+      </div>
+      <div class="third row g-2 gap-5">
+       <div class="col-6 text-capitalize px-5 py-5 third-left">
+        <div class="d-flex justify-content-between">
+         <p class="fs-4 fw-bold">Basic</p>
+         <img src="./images/medal 2.svg" alt="">
+        </div>
+        <div  class="py-2"><p><span class="me-2"><img src="./images/like 2.svg" alt=""></span> 10 ads posts per month</p></div>
+        <div  class="py-2"><p><span class="me-2"><img src="./images/like 2.svg" alt=""></span> 100 texts per month</p></div>
+        <div  class="py-2"><p><span class="me-2"><img src="./images/like 2.svg" alt=""></span> Limited ads views</p></div>
+        <div class="pt-2 my-2 d-flex justify-content-between align-items-center">
+         <p class="fs-4 fw-bold"><span class="me-3"><img src="./images/entypo_price-tag.svg" alt=""></span>N5000</p>
+         <button class="renew">Renew</button>
+        </div>
+       </div>
+       <div class="col-6 text-capitalize px-5 py-5 third-left">
+        <div class="d-flex justify-content-between">
+          <p class="fs-4 fw-bold">Premium</p>
+          <img src="./images/medal.svg" alt="">
+         </div>
+         <div  class="py-2"><p><span class="me-2"><img src="./images/like.svg" alt=""></span> Unlimited Posts</p></div>
+         <div  class="py-2"><p><span class="me-2"><img src="./images/like.svg" alt=""></span> Unlimited Texts</p></div>
+         <div  class="py-2"><p><span class="me-2"><img src="./images/like.svg" alt=""></span> Top views and rankings</p></div>
+         <div class="pt-2 my-2 d-flex justify-content-between align-items-center">
+          <p class="fs-4 fw-bold"><span class="me-3"><img src="./images/entypo_price-tag(1).svg" alt=""></span>N20,000</p>
+          <button class="renew">Upgrade</button>
+         </div>
+ 
+       </div>
+      </div>
+      <div class="my-5">
+       <p class="fs-4 fw-bold text-capitalize">other activities</p>
+       <div class="d-flex justify-content-between gap-5">
+        <div class="p-5 activity">
+         <p class="fs-5 fw-bold">Trends</p>
+         <p><a href="#">View Latest Market Trends</a></p>
+         <p><a href="#">Check the latest updates about agent Privacy Policy</a></p>
+        </div>
+        <div class="p-5 activity">
+         <p class="fs-5 fw-bold">Requests</p>
+         <p><a href="#">View Latest Market Trends</a></p>
+         <p><a href="#">Check the latest updates about agent Privacy Policy</a></p>
+        </div>
+        <div class="p-5 activity">
+         <p class="fs-5 fw-bold">Performance</p>
+         <p><a href="#">View Latest Market Trends</a></p>
+         <p><a href="#">Check the latest updates about agent Privacy Policy</a></p>
+        </div>
+       </div>
+      </div>
+ 
+     </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+:root{
+ --main-blue: #14213D;
+ --orange: #FCA311;
+ --secondary-blue: #3772FF;
+ --white: #FEFFFF;
+ --blue-gradient: linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%);
+}
+
+.first{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ border-radius: 1.5rem;
+ width: 36rem;
+ height: 32rem;
+ border: 1px solid #14213D ;
+ background:  linear-gradient(140deg, rgba(20, 33, 61, 0.95) 52.16%, rgba(55, 114, 255, 0.95) 152.83%);
+ backdrop-filter: blur(11.578888893127441px);
+ text-align: center;
+ color: var(--white);
+}
+.first button{
+ background-color: transparent;
+ outline: none;
+ border: none;
+ color: var(--white);
+}
+.second, .fourth, .fifth{
+ border: 1px solid #14213D ;
+ background:  linear-gradient(140deg, rgba(20, 33, 61, 0.95) 52.16%, rgba(55, 114, 255, 0.95) 152.83%);
+ backdrop-filter: blur(11.578888893127441px);
+ width: 39rem;
+ padding:5rem 7rem ;
+ border-radius: 1.5rem;
+ color: var(--white);
+}
+.second form button, .fourth form button, .fifth button{
+ width: 100%;
+}
+form input{
+ background-color: transparent;
+ outline: none;
+ margin: 15px 0;
+ border: none;
+ border-bottom: 1px solid var(--white);
+ padding-bottom:5px;
+ width: 100%;
+ color: var(--white);
+}
+.second a{
+ text-decoration: none;
+ color: var(--secondary-blue);
+}
+.create-link{
+ margin-top: -20px;
+}
+form button, .fifth button, form .button{
+ color: var(--white);
+ font-weight: bold;
+ background-color: var(--main-blue);
+ padding: 10px;
+ border-radius: 2rem;
+ border: 1px solid var(--main-blue);
+ text-transform: capitalize;
+}
+.social-icon{
+ background-color: var(--main-blue);
+ border-radius: 50%;
+ padding: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.alternate-sign{
+ background-color: transparent;
+ border: none;
+ outline: none;
+ color: var(--secondary-blue);
+}
+.radio{
+ display: flex;
+ justify-content: space-between;
+ padding: 0px 100px;
+ margin-bottom: 20px;
+}
+.radio button{
+ background-color: transparent;
+ outline: none;
+ border: none;
+ color: var(--white);
+}
+.radios{
+ accent-color: var(--orange);
+ border: 1px solid var(--white);
+}
+.fifth img{
+ margin-left: -50px;
+}
+#form-outer{
+ padding: 100px;
+ margin: 5px auto;
+ z-index: 100;
+}
+.all-form{
+ display: none;
+ margin-top: 25px;
+}
+
+
+
