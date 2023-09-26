@@ -371,7 +371,7 @@ table{
 .available-roommate{
  margin: 1.5rem 5rem 1.5rem 5rem;
 }
-.available-roommate table tr td button{
+#available-roommate table tr td button, .available-roommate table tr td button{
  padding: 5px 10px;
  font-size: 10px;
  background-color: transparent;

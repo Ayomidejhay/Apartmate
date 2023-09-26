@@ -14,6 +14,7 @@ const agentsBtn = document.getElementById('agents-btn')
 const resetBtn = document.getElementById('reset-btn')
 const linkBtn =document.getElementById('link-btn')
 
+
 function removeAll() {
  signIn.style.display='none'
  signUpStudent.style.display='none'
@@ -58,3 +59,9 @@ agentsBtn.addEventListener('click', ()=> {
  removeAll()
  signUpAgent.style.display='block'
 })
+
+var modal=document.getElementById('form-outer');
+window.onclick = function(event) {
+ if (event.target == modal)
+ {modal.style.display = 'none';}
+}

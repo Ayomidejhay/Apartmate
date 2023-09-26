@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>apartment</title>
+    <title>Apartment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     
@@ -22,12 +23,12 @@
             <li><a class="mx-2 nav-link" href="#">add listing</a></li> 
           </ul> 
           <div class="started d-md-none">
-            <a class="" href="#">get started</a>
+            <a id="get-started" class=" text-capitalize" href="#">get started</a>
           </div>        
          </div>
         </div>
         <div class="started d-none d-md-block">
-          <a class=" text-capitalize" href="#">get started</a>
+          <a id="get-started" class=" text-capitalize" href="#">get started</a>
         </div>
         <div class="burger">
          <div class="line1"></div>
@@ -43,7 +44,7 @@
       <div class="col-4" id="apart-container">
         <div class="section-side">
           <form action="">
-            <div>
+            <div class="text-capitalize">
               <div class="apart-input d-flex justify-content-between gap-2 my-3">  
                 <select class="text-capitalize" name="offer-type" id="offer-type">
                   <option value="">offer type</option>
@@ -68,18 +69,62 @@
                 </select>
                 <select class="text-capitalize" name="state" id="state">
                   <option value="">state</option>
-                  <option value="single-room">single room</option>
-                  <option value="self-contain">room self contain</option>
-                  <option value="flat">flat</option>
+                  <option value="abia">abia</option>
+                  <option value="adamawa">adamawa</option>
+                  <option value="akwa-ibom">akwa ibom</option>
+                  <option value="bauchi">bauchi</option>
+                  <option value="bayelsa">bayelsa</option>
+                  <option value="benue">benue</option>
+                  <option value="cross-river">cross river</option>
+                  <option value="delta">delta</option>
+                  <option value="ebonyi">ebonyi</option>
+                  <option value="edo">edo</option>
+                  <option value="enugu">enugu</option>
+                  <option value="ekiti">ekiti</option>
+                  <option value="gombe">gombe</option>
+                  <option value="imo">imo</option>
+                  <option value="jigawa">jigawa</option>
+                  <option value="kaduna">kaduna</option>
+                  <option value="kastina">kastina</option>
+                  <option value="kano">kano</option>
+                  <option value="kebbi">kebbi</option>
+                  <option value="kogi">kogi</option>
+                  <option value="kwara">kwara</option>
+                  <option value="lagos">lagos</option>
+                  <option value="nassarawa">nassarawa</option>
+                  <option value="niger">niger</option>
+                  <option value="ogun">ogun</option>
+                  <option value="ondo">ondo</option>
+                  <option value="osun">osun</option>
+                  <option value="oyo">oyo</option>
+                  <option value="plateau">plateau</option>
+                  <option value="rivers">rivers</option>
+                  <option value="sokoto">sokoto</option>
+                  <option value="taraba">taraba</option>
+                  <option value="bornu">bornu</option>
+                  <option value="yobe">yobe</option>
+                  <option value="fct">FCT</option>
                 </select>
               </div>
               
               <div class="apart-input d-flex justify-content-between gap-2 my-3">  
                 <select class="text-capitalize" name="city" id="city">
                   <option value="">city</option>
-                  <option value="single-room">single room</option>
-                  <option value="self-contain">room self contain</option>
-                  <option value="flat">flat</option>
+                  <option value="akoka">akoka</option>
+                  <option value="ado">ado</option>
+                  <option value="auchi">auchi</option>
+                  <option value="omoku">omoku</option>
+                  <option value="akwanga">akwanga</option>
+                  <option value="nekede">nekede</option>
+                  <option value="ife">ife</option>
+                  <option value="lakowe">lakowe</option>
+                  <option value="ojo">ojo</option>
+                  <option value="ibadan">ibadan</option>
+                  <option value="nsukka">nsukka</option>
+                  <option value="ugbowo">ugbowo</option>
+                  <option value="ilorin">ilorin west</option>
+                  <option value="uyo">uyo</option>
+                  <option value="yaba">yaba</option>
                 </select>
                 <select class="text-capitalize" name="school-area" id="school-area">
                   <option value="">preferred school area</option>
@@ -432,5 +477,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="./dashboard.js"></script>
   </body>
 </html>

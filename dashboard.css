@@ -13,6 +13,7 @@
  --blue-gradient: linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%);
  --textiary-blue: #BCD0FF;
  --grey-shade-color: #E5E5E5;
+ --blue-shade:#D7E3FF;
 }
 body{
  width: 100vw;
@@ -79,18 +80,22 @@ body{
 .name{
  color: var(--secondary-blue);
 }
-.search{
+.search, #searching{
  background-color: transparent;
  padding: 0.5rem 1.5rem;
  border: 2px solid var(--main-blue);
  border-radius: 1.5rem;
 }
-.search input{
+#searching{
+ padding-left: 20px;
+}
+.search input, #searching input{
  border: none;
  outline: none;
  background-color: transparent;
  width: 150px;
 }
+
 
 
 .second-left{
@@ -267,4 +272,15 @@ body{
  margin-left: -12px;
  border-top-left-radius: 20px;
  border-bottom-left-radius: 20px;
+}
+.send-requests{
+ background-color: var(--blue-shade);
+ margin-left: -60px;
+ width: 28rem;
+}
+#send-request{
+ padding: 5px 20px;
+ background-color: var(--main-blue);
+ color: var(--white);
+ border-radius: 2rem;
 }
