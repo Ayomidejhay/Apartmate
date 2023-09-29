@@ -270,21 +270,56 @@ footer a{
 
 .faq-question{
  background-image:linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%) ;
- border-radius: 15px;
+ border-top-right-radius: 15px;
+ border-top-left-radius: 15px;
 }
 .faq{
  color: var(--white);
+ margin-bottom: 20px;
+}
+.faq-question:hover{
+ border-bottom-left-radius: 0px;
+ border-bottom-right-radius: 0px;
+}
+
+.faq.active .faq-answer{
+ max-height:300px ;
+}
+.faq-answer{
+ background-color: var(--white);
+ color: var(--main-blue);
+ border: 1px solid var(--main-blue);
+ border-bottom-right-radius: 15px;
+ border-bottom-left-radius: 15px;
+ max-height: 300px;
+ overflow: hidden;
+ transition: max-height 1.4s ease;
+ padding-top: 1rem;
+ line-height: 1.6;
+ display: none;
+}
+.faq-btn{
+ transform: rotate(90deg);
 }
 .faq-button{
  background-image:linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%);
  border: none;
  outline: none;
 }
-#apart-container{
- margin-top: 70px;
+.apat{
  padding: 2.5rem 5rem;
+ padding-top: 80px;
+}
+#apart-container{
  border-radius: 0.5rem;
  border: 1px solid var(--grey-shade);
+ background: var(--white-shade);
+ box-shadow: 0px 8px 16px 0px rgba(4, 7, 12, 0.10);
+ margin-top: 100px;
+}
+#aparts-container{
+ border-radius: 0.5rem;
+ border: 1px solid var(--main-blue);
  background: var(--white-shade);
  box-shadow: 0px 8px 16px 0px rgba(4, 7, 12, 0.10);
 }
@@ -293,7 +328,7 @@ form .apart-input select{
  padding: 8px ;
  border: 2px solid var(--secondary-blue);
 }
-.aparts-button{
+.aparts-button, .book-now{
  display: flex;
  justify-content: center;
 }
@@ -305,6 +340,15 @@ form .apart-input select{
  margin-top: 50px;
  display: flex;
  border-radius: 5px;
+}
+.book-now button{
+ padding: 5px 5px;
+ background-color:var(--main-blue) ;
+ border: 2px solid var(--main-blue);
+ color: var(--white);
+ border-radius: 2rem;
+ height: 40px;
+ width: 150px;
 }
 .section-side{
  border-radius: 0.5rem;
@@ -401,4 +445,33 @@ tr{
 }
 .new-request{
  margin: 3.5rem 5rem;
+}
+.detail-img{
+ margin-top: -10px;
+}
+.second-detail-img{
+ margin-top: -10px;
+}
+.full-line{
+ border: 1px solid var(--main-blue);
+ width: 100%;
+}
+.mid-line{
+ border: 1px solid var(--main-blue);
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+.mid-text{
+ width: 600px;
+}
+.see-more button{
+ border: 1px solid var(--main-blue);
+ background-color: transparent;
+ padding: 7px 20px;
+ border-radius: 2rem;
+}
+.apart-button a{
+ text-decoration: none;
+ color: var(--main-blue);
 }

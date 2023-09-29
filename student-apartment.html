@@ -3,12 +3,435 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Apartmate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
+    <div class="row">
+      <div class="col-2 side-menu text-center pt-5 text-capitalize">
+        <img src="./images/logo-frame.png" alt="">
+        <div class="mt-5 d-flex flex-column  " id="side-menu">
+         <div class="d-flex py-2 px-3 dash ">
+          <img src="./images/ic_round-dashboard.svg" alt="">
+          <a class="mx-4" href="./student-dashboard.html">dashboard</a>
+         </div>
+         <div class="d-flex py-2 px-3 dash active-link">
+          <img src="./images/material-symbols_apartment.svg" alt="">
+          <a class="mx-4" href="student-apartment.html">apartments</a>
+         </div>
+         <div class="d-flex py-2 px-3 dash">
+          <img src="./images/fa-solid_user-friends.svg" alt="">
+          <a class="mx-4" href="./student-roommate.html">roommates</a>
+         </div>
+         <div class="d-flex py-2 px-3 dash">
+          <img src="./images/bxs_chat.svg" alt="">
+          <a class="mx-4" href="./student-chat.html">chat</a>
+         </div>
+         <div class="d-flex py-2 px-3 dash">
+          <img src="./images/iconamoon_profile-fill.svg" alt="">
+          <a class="mx-4" href="./student-profile.html">profile</a>
+         </div>
+   
+        </div>
+        <div class="text-center downside">
+         <img src="./images/Ellipse 2.svg" alt="">
+         <p class="name">Yahaya Mira</p>
+         <p class="student">Student</p>
+         <div class="d-flex gap-4 justify-content-center">
+          <a href="#"><img class="downside-img" src="./images/settings.svg" alt=""></a>
+          <a href="#"><img class="downside-img" src="./images/logout.svg" alt=""></a>
+         </div>
+        </div>
+       </div>
+       <div class="col-10 right-side px-5 pt-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="fw-bold fs-4">Apartmate</p>
+          <div class="d-flex gap-5">
+           <div class="search d-flex gap-3 px=4" id="searching" >
+            <img class="ms-5" src="./images/search.svg" alt="">
+            <input type="text" name="search" class="searching" placeholder="Search" id="search">
+           </div>
+           <a href="#"><img src="./images/notification.svg" alt=""></a>
+           <a href="#"><img src="./images/messages-2.svg" alt=""></a>
+           <p class="fw-bold" id="date">11th September, 2023</p>
+          </div>
+        </div>
+
+        <div class="jumbotron">
+          <div class="container-md mt-5 form-container" id="form-container">
+            <form class="d-flex flex-column align-items-center" action="" method="get">
+              <div class="d-flex">
+                <div class="d-flex flex-column text-center gap-3 mx-4">
+                  <label for="type">Apartment Type</label>
+                  <select class="w-10" name="type" id="type">
+                    <option value=""></option>
+                    <option value="single-room">single room</option>
+                    <option value="self-contain">room self contain</option>
+                    <option value="flat">flat</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column text-center gap-3 mx-4">
+                  <label for="bedroom">No. of Bedrooms</label>
+                  <select class="w-10" name="bedroom" id="bedroom">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column text-center gap-3 mx-4">
+                  <label for="bathroom">No. of Bathrooms</label>
+                  <select name="bathroom" id="bathroom">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column text-center gap-3 mx-4">
+                  <label for="location">Location</label>
+                  <select name="location" id="location">
+                    <option value=""></option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                    <option value="kaduna">Kaduna</option>
+                    <option value="kano">Kano</option>
+                    m<option value="oyo">Oyo</option>
+                    <option value="anambra">Anambra</option>
+                  </select>
+                </div>
+              </div>
+              <button class="search text-capitalize mt-5" type="submit">start your search</button>
+            </form>
+          </div>
+        </div>
+        <p class="fw-bold fs-4">Available Apartments</p>
+        <div>
+          <div class="row mb-5 mx-3">
+            <div class="col-4 ">
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">a single room</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#75,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#350,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">a single room</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#75,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#350,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">a single room</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text ">#75,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each" >
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#350,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="apart-each my-4" id='apart-each'>
+                <div>
+                  <div class="aparts-each">
+                    <img class="" src="./images/roomself1 1(1).png" alt="">
+                    <!--<div class="d-flex me-2 group-star">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/star-full.svg" alt="">
+                      <img class="mx-1" src="./images/ic_outline-star-half.svg" alt="">
+                    </div>-->
+                  </div>
+                </div>
+                <div class="after-image">
+                  <div class="d-flex justify-content-between">
+                    <p class="text-uppercase fw-bold text">2 bedroom flat</p>
+                    <img src="./images/heart.svg" alt="">
+                  </div>
+                  <div>
+                    <p class="text-uppercase"><span><img src="./images/location.svg" alt=""></span>  moro phase 2, yaba, lagos</p>
+                    <div class="d-flex justify-content-between">
+                      <p><span><img src="./images/bed.svg" alt=""></span>  1 Bed</p>
+                      <p><span><img src="./images/bathroom.svg" alt=""></span>  1 Bathroom</p>
+                      <p><span><img src="./images/toilet.svg" alt=""></span>  1 Toilet</p>
+                      <p><span><img src="./images/sqft.svg" alt=""></span>  1000sqft</p>
+                    </div>
+                    <p><span class="yellow">150+</span> Reviews</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                     <p class=""><span class="name fw-bold fs-6 text">#250,000/</span><span class="dark-head fw-bold">YEAR</span></p>
+                     <button class="apart-button fw-bold">More details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+    </div>
 
    
 

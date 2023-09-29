@@ -11,7 +11,7 @@
     
    <div class="row">
     <div class="col-2 side-menu text-center pt-5 text-capitalize">
-     <img src="./images/logo (2).png" alt="">
+     <img src="./images/logo-frame.png" alt="">
      <div class="mt-5 d-flex flex-column  " id="side-menu">
       <div class="d-flex py-2 px-3 dash active-link">
        <img src="./images/ic_round-dashboard.svg" alt="">
@@ -19,7 +19,7 @@
       </div>
       <div class="d-flex py-2 px-3 dash">
        <img src="./images/material-symbols_apartment.svg" alt="">
-       <a class="mx-4" href="#">apartments</a>
+       <a class="mx-4" href="./student-apartment.html">apartments</a>
       </div>
       <div class="d-flex py-2 px-3 dash">
        <img src="./images/fa-solid_user-friends.svg" alt="">
@@ -27,11 +27,11 @@
       </div>
       <div class="d-flex py-2 px-3 dash">
        <img src="./images/bxs_chat.svg" alt="">
-       <a class="mx-4" href="#">chat</a>
+       <a class="mx-4" href="./student-chat.html">chat</a>
       </div>
       <div class="d-flex py-2 px-3 dash">
        <img src="./images/iconamoon_profile-fill.svg" alt="">
-       <a class="mx-4" href="#">profile</a>
+       <a class="mx-4" href="./student-profile.html">profile</a>
       </div>
 
      </div>
@@ -49,15 +49,35 @@
      <div class="d-flex justify-content-between align-items-center">
       <p class="fw-bold fs-4">Dashboard</p>
       <div class="d-flex gap-5">
-       <div class="search d-flex gap-3" >
+       <div class="search d-flex gap-3 d-inline" >
         <img src="./images/search.svg" alt="">
-        <input type="text" name="search" placeholder="Search" id="search">
+        <input type="text" name="search" placeholder="Search" id="search" class="d-inline">
        </div>
-       <a href="#"><img src="./images/notification.svg" alt=""></a>
+       <div class="notification-pop">
+        <a href="#"><img src="./images/notification.svg" alt=""></a>   
+       </div>
        <a href="#"><img src="./images/messages-2.svg" alt=""></a>
        <p class="fw-bold" id="date">11th September, 2023</p>
       </div>
      </div>
+     
+     <div class="inner-notification my-5">
+      <h5 class="fw-bold text-center rounded">Notification</h5>
+      <div></div>
+      <div>
+        <p class="px-3 py-2">Agent details for the apartment you booked</p>
+        <div class="mid-line"></div>
+        <p class="px-3 py-2">Funke sent you a message</p>
+        <div class="mid-line"></div>
+        <p class="px-3 py-2">Ronke replied your message</p>
+        <div class="mid-line"></div>
+        <p class="px-3 py-2">Check out new listings</p>
+        <div class="mid-line"></div>
+        <p class="px-3 py-2">Check out the new update on privacy policy</p>
+        <div class="mid-line"></div>
+      </div>
+    </div>
+
      <div class="second my-5 row g-0">
       <div class="col-6 second-left pb-2 px-5 ">
        <p class="text-uppercase pb-3 pt-4 name fs-5">welcome back <span>mira</span>!</p>
@@ -109,9 +129,9 @@
 
      <div class="last my-5">
       <p class="fs-4 fw-bold text-capitalize">recently viewed</p>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between latest-dash">
         <div class="text-capitalize last-dash gap-3">
-          <img class="pb-2 img-fluid" src="./images/student dashboard.png" alt="">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
           <p class="fs-6 fw-bold ms-2">single room</p>
           <p class="last-texts ms-2"><span><img  src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
           <div class="last-text d-flex justify-content-between"> 
@@ -122,7 +142,7 @@
           <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
         </div>
         <div class="text-capitalize last-dash gap-3">
-          <img class="pb-2 img-fluid" src="./images/student dashboard.png" alt="">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
           <p class="fs-6 fw-bold ms-2">single room</p>
           <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
           <div class="last-text d-flex"> 
@@ -133,7 +153,7 @@
           <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
         </div>
         <div class="text-capitalize last-dash gap-3">
-          <img class="pb-2 img-fluid" src="./images/student dashboard.png" alt="">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
           <p class="fs-6 fw-bold ms-2">single room</p>
           <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
           <div class="last-text d-flex"> 
@@ -143,7 +163,105 @@
           </div>
           <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
         </div>
-        
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img  src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex justify-content-between"> 
+            <div class=""><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class=""><p class="dashs ms-2"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class=""><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img  src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex justify-content-between"> 
+            <div class=""><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class=""><p class="dashs ms-2"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class=""><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img  src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex justify-content-between"> 
+            <div class=""><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class=""><p class="dashs ms-2"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class=""><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
+        <div class="text-capitalize last-dash gap-3">
+          <img class="pb-2" src="./images/student dashboard.png" alt="">
+          <p class="fs-6 fw-bold ms-2">single room</p>
+          <p class="last-texts ms-2"><span><img src="./images/location2.svg" alt=""></span> kc villa, ekosodin, benin city</p>
+          <div class="last-text d-flex"> 
+            <div class="col-4"><p class="dashs ms-2" ><span><img src="./images/Vector(4).svg" alt=""></span>  1 bed</p></div>
+            <div class="col-4"><p class="dashs"><span><img src="./images/Vector(5).svg" alt=""></span>  1 bathroom</p></div>
+            <div class="col-4"><p class="dashs ms-3"><span><img src="./images/Vector(6).svg" alt=""></span>  1200sqft</p></div>
+          </div>
+          <p class=" fw-bold last-texts ms-2">#750,000/Year</p>
+        </div>
       </div>
      </div>
     </div>
