@@ -91,7 +91,8 @@ body{
 .hero{
  padding: 1.5rem 5rem;
  margin-left: 30px;
- 
+ position: relative;
+ overflow: hidden;
 }
 .form-container{
  width: 90rem;
@@ -234,6 +235,10 @@ footer a{
 #connect h6{
  letter-spacing: 3px;
 }
+#connect > div{
+ width: 150px;
+ margin: 0 auto;
+}
 .school{
  text-transform: uppercase;
  color: var(--secondary-blue);
@@ -272,14 +277,15 @@ footer a{
  background-image:linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%) ;
  border-top-right-radius: 15px;
  border-top-left-radius: 15px;
+ transition: 2s ease;
 }
 .faq{
  color: var(--white);
  margin-bottom: 20px;
+ transition: 2s ease;
 }
 .faq-question:hover{
- border-bottom-left-radius: 0px;
- border-bottom-right-radius: 0px;
+ 
 }
 
 .faq.active .faq-answer{
@@ -293,13 +299,14 @@ footer a{
  border-bottom-left-radius: 15px;
  max-height: 300px;
  overflow: hidden;
- transition: max-height 1.4s ease;
+ transition:  2s ease;
  padding-top: 1rem;
  line-height: 1.6;
  display: none;
 }
 .faq-btn{
  transform: rotate(90deg);
+ transition: 2s ease-in
 }
 .faq-button{
  background-image:linear-gradient(140deg, #14213D 52.16%, #3772FF 152.83%);
@@ -359,6 +366,7 @@ form .apart-input select{
  padding: 30px;
  display: flex;
  justify-content: center;
+ margin-left: 5rem;
 }
 .apart-each{
  width: 24.5rem;
@@ -474,4 +482,16 @@ tr{
 .apart-button a{
  text-decoration: none;
  color: var(--main-blue);
+}
+.heart-btn{
+ cursor: pointer;
+}
+#color-link{
+ color: var(--secondary-blue);
+}
+.nav-links li a:hover{
+ color: var(--secondary-blue);
+}
+.faq-answer a{
+ text-decoration: none;
 }

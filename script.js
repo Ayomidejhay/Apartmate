@@ -165,3 +165,8 @@ questionTen.addEventListener('click', () => {
   btn10.style.transform = 'rotate(0deg)'
  }
 })
+
+const heartBtn = document.getElementsByClassName('heart-btn')
+heartBtn.addEventListener('click', () => {
+ heartBtn.src = "./images/Property 1=Frame 5973"
+})
